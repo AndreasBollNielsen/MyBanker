@@ -30,10 +30,11 @@ namespace MyBanker
         //show the credit on the card 
         public void CheckBalance()
         {
-            this.MaxBalance = 10000;
+            this.MaxWithdraw = 10000;
             this.Balance = 8000;
-            Console.WriteLine($"this debit card can be used online or internationally.\n using this card the user can only spend up to {this.MaxBalance} kr each month");
+            Console.WriteLine($"this debit card can be used online or internationally.\n using this card the user can only spend up to {this.MaxWithdraw} kr each month");
             Console.WriteLine($"balance is: {this.Balance} kr");
+            Console.WriteLine($"max withdraw is: {this.MaxWithdraw}");
         }
 
         //initialize prefix

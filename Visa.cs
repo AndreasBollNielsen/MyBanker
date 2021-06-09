@@ -28,10 +28,11 @@ namespace MyBanker
         //show the credit on the card 
         public void ShowCredit()
         {
-            this.MaxBalance = 20000;
+            this.MaxWithdraw = 20000;
             this.Balance = 15000;
             Console.WriteLine("this credit card overdraft is 25.000 kr");
             Console.WriteLine($"balance is: {this.Balance} kr");
+            Console.WriteLine($"max withdraw is: {this.MaxWithdraw}");
         }
 
         //initialize prefix

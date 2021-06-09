@@ -12,7 +12,7 @@ namespace MyBanker
         private string accountNumber;
         private int prefix;
         private double balance;
-        private double maxBalance;
+        private double maxWithdraw;
         private string cardType;
         
         //properties
@@ -22,10 +22,10 @@ namespace MyBanker
             set { cardType = value; }
         }
 
-        public double MaxBalance
+        public double MaxWithdraw
         {
-            get { return maxBalance; }
-            set { maxBalance = value; }
+            get { return maxWithdraw; }
+            set { maxWithdraw = value; }
         }
 
         public double Balance

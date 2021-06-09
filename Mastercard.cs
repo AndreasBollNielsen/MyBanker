@@ -30,10 +30,11 @@ namespace MyBanker
         //show the credit on the card 
         public void ShowCredit()
         {
-            this.MaxBalance = 40000;
+            this.MaxWithdraw = 40000;
             this.Balance = 35000;
             Console.WriteLine("with this card you can withdraw up to 5000 kr every day \n and withdraw up to 30.000 kr every month");
             Console.WriteLine($"balance is: {this.Balance} kr");
+            Console.WriteLine($"max withdraw is: {this.MaxWithdraw}");
         }
 
         //initialize prefix
