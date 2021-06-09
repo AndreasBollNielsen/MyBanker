@@ -20,9 +20,9 @@ namespace MyBanker
         {
             this.CardHolder = _cardholder;
             this.CardType = _cardType;
-            this.SetExpireDate();
-            this.InitializePrefix();
-            this.InitializeCard();
+            SetExpireDate();
+            InitializePrefix();
+            InitializeCard();
         }
 
         //show the credit on the card 

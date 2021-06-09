@@ -7,6 +7,6 @@ namespace MyBanker
     //interface
     public interface IDebit
     {
-        void CheckBalance();
+        void ShowCardinfo();
     }
 }

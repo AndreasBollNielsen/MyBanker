@@ -43,7 +43,7 @@ namespace MyBanker
                 }
                 else
                 {
-                    ((IDebit)creditCard).CheckBalance();
+                    ((IDebit)creditCard).ShowCardinfo();
                 }
 
                 Console.WriteLine(("").PadRight(30, '-'));

@@ -28,7 +28,7 @@ namespace MyBanker
         }
 
         //show the credit on the card 
-        public void CheckBalance()
+        public void ShowCardinfo()
         {
             this.Balance = 5000;
             Console.WriteLine("with this card, the user has to be 18 or over to qualify for this type of card.\n it can be used internationally or online");

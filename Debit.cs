@@ -20,12 +20,12 @@ namespace MyBanker
         {
             this.CardHolder = _cardholder;
             this.CardType = _cardType;
-           
-            this.InitializeCard();
+            InitializePrefix();
+            InitializeCard();
         }
 
         //show info about the card 
-        public void CheckBalance()
+        public void ShowCardinfo()
         {
             this.Balance = 10000;
             Console.WriteLine("this card is offered to users that don´t qualify for Visa,Maestro or Mastercards.\nThere is no option for overdraft");
