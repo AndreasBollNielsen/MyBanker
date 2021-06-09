@@ -80,19 +80,17 @@ namespace MyBanker
             accountNumber = account;
 
             //set card number
-            CardNumber = prefix.ToString() + " ";
+            CardNumber = prefix.ToString() +" ";
             int length = 0;
-            int seperator = 0;
+           
             //set numbers of digits
             if (cardType != "Maestro")
             {
                 length = 16 - prefix.ToString().Length;
-                seperator = 3;
             }
             else
             {
                 length = 19 - prefix.ToString().Length;
-                seperator = 2;
             }
 
             
@@ -100,15 +98,14 @@ namespace MyBanker
             for (int i = 0; i < length; i++)
             {
                 CardNumber += rand.Next(0, 10).ToString();
-
-                if (i % 5 == 0 )
+                if (i == 3 || i == 7 || i== 11)
                 {
                     cardNumber += " ";
-                    length++;
+                    
                 }
             }
 
-
+            
 
         }
 
